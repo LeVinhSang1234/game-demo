@@ -1,0 +1,88 @@
+.intro {
+  max-width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffe066; /* vàng nhạt cảnh báo */
+}
+
+.intro h2 {
+  margin-bottom: 2.5vh;
+  font-size: 8vh;
+  text-align: center;
+  color: #ff3b3b; /* đỏ cảnh báo */
+  margin-top: 0;
+  text-shadow: 0 2px 12px rgba(255, 59, 59, 0.18);
+}
+
+.intro p {
+  font-size: 1.72em;
+  color: #ff9800; /* cam cảnh báo */
+}
+
+.intro button {
+  padding: 0.9em 3.8em;
+  font-size: 1.35em;
+  border: none;
+  border-radius: 2.5em;
+  background: linear-gradient(90deg, #ff3b3b 0%, #ff9800 100%);
+  color: #232347;
+  box-shadow: 0 4px 24px rgba(255, 59, 59, 0.18),
+    0 1.5px 8px rgba(255, 152, 0, 0.12);
+  cursor: pointer;
+  transition: transform 0.18s cubic-bezier(0.4, 2, 0.3, 0.7), box-shadow 0.18s,
+    border 0.3s, background 0.3s;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  outline: none;
+  border: 2px solid #ffe066;
+}
+
+.intro button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 224, 102, 0.18);
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s, height 0.4s;
+  z-index: 0;
+}
+
+.intro button:hover {
+  transform: scale(1.09) rotate(-1.5deg);
+  box-shadow: 0 10px 38px rgba(255, 152, 0, 0.28),
+    0 3px 16px rgba(255, 224, 102, 0.18);
+  border: 2.5px solid #ff3b3b;
+  background: linear-gradient(90deg, #ffe066 0%, #ff9800 100%);
+}
+
+.intro button:hover::after {
+  width: 260%;
+  height: 260%;
+}
+
+.intro button:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 8px rgba(255, 152, 0, 0.12);
+  border: 2.5px solid #ff9800;
+  background: linear-gradient(90deg, #ff9800 0%, #ff3b3b 100%);
+}
+
+.intro button {
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 8px rgba(255, 224, 102, 0.18);
+  color: #ffe066;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
