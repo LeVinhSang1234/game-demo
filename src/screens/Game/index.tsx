@@ -132,10 +132,10 @@ export default function Game() {
             <div style={{ marginBottom: "1.5rem" }}>
               You stopped {6 - result.loopIndexEnd} out of 6 shots that could
               have been fired.
-              <br />
-              You scored {result.percent}
-              <br />
-              You can improve your score by reacting faster.
+              <p>You scored {result.percent}</p>
+              <p style={{ color: "#76ff71" }}>
+                You can improve your score by reacting faster.
+              </p>
             </div>
             <div className="try-again-overlay">
               <button className="try-again-btn" onClick={onTryAgain}>
