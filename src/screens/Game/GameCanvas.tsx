@@ -173,7 +173,7 @@ export default function GameCanvas({
   ]);
 
   return (
-    <div style={{ width: "100dvw", height: "100dvh", position: "relative" }}>
+    <div style={{ width: "100dvw", height: "100dvh", position: "relative", overflow: 'hidden' }}>
       <canvas
         style={{ width: "100dvw", height: "100dvh", background: "black" }}
         ref={canvasRef}
