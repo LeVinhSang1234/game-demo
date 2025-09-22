@@ -134,6 +134,8 @@ export default function Game() {
               have been fired.
               <br />
               You scored {result.percent}
+              <br />
+              You can improve your score by reacting faster.
             </div>
             <div className="try-again-overlay">
               <button className="try-again-btn" onClick={onTryAgain}>
