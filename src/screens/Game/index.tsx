@@ -133,7 +133,7 @@ export default function Game() {
               You stopped {6 - result.loopIndexEnd} out of 6 shots that could
               have been fired.
               <br />
-              That's a success rate of {result.percent}%
+              You scored {result.percent}
             </div>
             <div className="try-again-overlay">
               <button className="try-again-btn" onClick={onTryAgain}>
